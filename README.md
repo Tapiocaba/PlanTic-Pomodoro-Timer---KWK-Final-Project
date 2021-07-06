@@ -4,7 +4,9 @@ The purpose of this timer is to pronote productive studying! We felt it was very
 
 ## Description
 
-We utilized 
+Synched pomodoro timer to promote studying - made with JavaScript, CSS, and HTML.
+
+
 ## Getting Started
 
 ## Authors
