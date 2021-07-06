@@ -1,0 +1,422 @@
+/*menu stuff */
+nav {
+	margin: 27px auto 0;
+  text-decoration: none;
+	position: relative;
+	width: 580px;
+	height: 50px;
+	background-color: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+}
+
+nav a {
+	text-decoration: none;
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 120px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+a:nth-child(4) {
+	width: 120px;
+}
+a:nth-child(5) {
+	width: 120px;
+}
+nav .start-study, a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0;
+	background-color: #1abc9c;
+}
+nav .start-shortbreak, a:nth-child(2):hover~.animation {
+	width: 120px;
+	left: 100px;
+	background-color: #e74c3c;
+}
+nav .start-longbreak, a:nth-child(3):hover~.animation {
+	width: 120px;
+	left: 215px;
+	background-color: #3498db;
+}
+nav .start-howto, a:nth-child(4):hover~.animation {
+	width: 100px;
+	left: 330px;
+	background-color: #9b59b6;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+	width: 150px;
+	left: 430px;
+	background-color: #e67e22;
+}
+
+/* end of menu */
+
+body{
+  background-color: #BBB6DF
+}
+
+/* heading */
+.headingOne {
+	text-align: center;
+	margin: 40px 0 40px;
+	font-size: 30px;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+  
+}
+/* end of heading*/
+
+/* all timer stuff below pls don't touch */
+
+/* timer */
+.timer {
+  color: #ffffff;
+  text-align: center;
+  width: 20rem;
+  height: 20rem;
+  border: 5px solid #fff;
+  border-radius: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  width: 100%;
+}
+
+/* remove the padding on the play button */
+.button {
+  padding: 0;
+  width: 100px;
+  length: 150px;
+  align-content: center;
+  text-align: center;
+  font-size: 20px;
+  border: none;
+  color: white;
+  background-color: #6A8D73;
+}
+
+.show_message {
+  display: block;
+  padding: 1rem 0;
+  color: #272343;
+  background: #e3f6f5;
+  border-radius: 0.5rem;
+  transition: 0.5s ease;
+}
+
+
+/* end of timer */
+
+/*Contact us*/
+.contactUs{
+  color:white;
+  font-size: 40px;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: 'Bebas Neue', cursive;
+}
+.paraOne{
+  color:#6A8D73;
+  font-size: 20px;
+  font-family: 'Heebo', sans-serif;
+}
+
+.email {
+  color:#6A8D73;
+  font-size: 20px;
+  font-family: 'Heebo', sans-serif;
+}
+.aboutUs{
+  padding:15px;
+  text-align:center;
+}
+.linkToMail{
+  text-decoration:none;
+  border: 2px solid #6A8D73;
+  background-color: #BBB6DF;
+  color:#6A8D73;
+  text-align:center;
+  padding: 8px;
+}
+.linkToMail:hover{
+  background-color:#6A8D73;
+  color:white;
+}
+
+/* end of contact us*/
+
+/*how-to page*/
+.portionOne{
+  padding: 10px;
+  margin: 20px;
+}
+.history{
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 40px;
+ font-family: 'Bebas Neue', cursive;
+         
+}
+.historyExplain{
+ color: #6A8D73;
+ font-size: 25px;
+ text-align:center;
+ font-family: 'Heebo', sans-serif;
+}
+.portionTwo{
+  padding: 10px;
+  margin: 20px;
+}
+.how{
+  color:white;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 40px;
+  font-family: 'Bebas Neue', cursive;
+}
+.howTo{
+  color: #6A8D73;
+  font-size: 25px;
+  text-align:center;
+  font-family: 'Heebo', sans-serif;
+}
+.gif{
+  display:flex;
+  flex-direction:row-reverse;
+  transform: translate(-70px, -410px);
+  overflow: hidden;
+}
+img{
+  height: 25%;
+  width:25%;
+}
+
+/* end of how-to*/
+
+/*plant*/
+.wrapper {
+	position:absolute;
+	bottom:0;
+	width:0%;
+  background-color:white;
+  transform: translate(700px, 0px);
+}
+
+.box {
+	position:relative;
+	margin:auto;
+	display:block;
+	margin-top:8%;
+	width:600px;
+	height:600px;
+	background:none;
+}
+
+.pot {
+	position:absolute;
+	width:20%;
+	height:20%;
+	bottom:0;
+	left:40%;
+	background:#F7C59F;
+	-webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+	clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+	box-shadow: inset 0 16px 20px rgba(0,0,0,0.3);
+}
+
+.pot-top {
+	position:absolute;
+	width:22%;
+	height:5%;
+	bottom:17%;
+	left:39%;
+	background:#F7C59F;
+	border-radius:3px;
+}
+
+.stem {
+	position:absolute;
+	width:2%;
+	height:50%;
+	left:49%;
+	bottom:20%;
+	background:#70B77E;
+}
+
+.leaf {
+	position:absolute;
+	width:700%;
+	height:10%;
+	border-radius:50%;
+	background:#70B77E;
+}
+
+.leaf .line {
+	position:absolute;
+	width:80%;
+	height:1%;
+	background:rgba(0,0,0,0.1);
+	top:48%;
+}
+
+.leaf01 {
+	top:70%;
+	left:50%;
+	transform:rotate(-25deg);
+}
+
+.leaf02 {
+	top:50%;
+	right:50%;
+	transform:rotate(205deg);
+}
+
+.leaf03 {
+	top:30%;
+	left:50%;
+	transform:rotate(-25deg);
+} 
+
+.leaf04 {
+	top:20%;
+	right:50%;
+	transform:rotate(205deg);
+}  
+
+.leaf05 {
+	top:-17%;
+	left:-120%;
+	transform:rotate(-60deg);
+}
+
+.leaf06 {
+	top:-9%;
+	right:22%;
+	transform:rotate(195deg);
+}
+
+/* --- ANIMATION --- */
+
+.stem, .leaf {
+	animation-duration: 1500s!important;
+	animation-fill-mode:forwards;
+}   
+
+.stem.rain {
+	animation: grow 1250s linear 1;
+}
+
+@keyframes grow {
+	0% {
+		bottom:-40%;
+		width:1%;
+	}
+	
+	100% {
+		bottom:20%;
+		width:2%;
+	}
+}
+
+.stem.rain .leaf {
+	animation: leafGrow 1250s linear 1;
+	animation-fill-mode:forwards;
+}
+
+@keyframes leafGrow {
+	0% {
+		width:0%;
+		height:0%;
+	}
+	
+	100% {
+		width:700%;
+		height:10%;
+	}
+} 
+
+.stem.rain .leaf05 {
+	animation: topLeafRight 1250s linear 1;
+}
+
+@keyframes topLeafRight {
+	0% {
+		top:5%;
+		width:0%;
+		height:0%;
+		left:10%;
+	}
+	
+	100% {
+		width:700%;
+		height:10%;
+		top:-17%;
+		left:-120%;
+	}
+}
+
+.stem.rain .leaf06 {
+	animation: topLeafLeft 1250s linear 1;
+}
+
+@keyframes topLeafLeft {
+	0% {
+		top:0%;
+		width:0%;
+		height:0%;
+	}
+	
+	100% {
+		width:700%;
+		height:10%;
+		top:-9%;
+	}
+}  
+
+.drop {
+	position:absolute;
+	top:30px;
+	left:20px;
+	width: 50px;
+	height: 50px;
+	border: none;
+	-webkit-border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+	border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+	font: normal 100%/normal Arial, Helvetica, sans-serif;
+	background:#17BEBB;
+	-webkit-transform: rotateZ(-45deg)   ;
+	transform: rotateZ(-45deg)   ;
+	-webkit-transform-origin: 50% 50% 0;
+	transform-origin: 50% 50% 0;
+	animation:rain 2500s linear 1;
+	animation-fill-mode:forwards;
+	cursor:pointer;
+	z-index:9999;
+}
+/*plant end*/

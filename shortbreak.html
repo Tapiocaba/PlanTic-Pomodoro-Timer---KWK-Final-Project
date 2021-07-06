@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png">
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <title>PlanTic Pomodoro Timer - Short Break</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+  </head>
+  <body>
+    <!-- menu -->
+    <nav>
+      <a href='index.html' style="text-decoration:none"> STUDY </a>
+      <a href='shortbreak.html' style="text-decoration:none"> SHORT BREAK </a>
+      <a href='longbreak.html' style="text-decoration:none"> LONG BREAK </a>
+      <a href='howto.html' style="text-decoration:none"> HOW-TO</a>
+      <a href='contact.html' style="text-decoration:none"> CONTACT US </a>
+      <div class="animation start-home" style="text-decoration:none"> </div>
+    </nav>
+
+      
+    <!-- timer code -->
+    <div class="container">
+      <!-- Heading -->
+     <h1 class="headingOne">PlanTic Short Break Timer</h1>
+
+      <!-- Main Timer -->
+      <div class="container timer">
+        <div class="row">
+          <div class="col-5">
+            <h4 id="minutes"></h4>
+          </div>
+          <div class="col-2">
+            <h4>:</h4>
+          </div>
+          <div class="col-5">
+            <h4 id="seconds"></h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Finished Message -->
+      <div class="my-5">
+        <h3 id="done" class="text-center"></h3>
+      </div>
+
+      <!-- Start Button and reset button-->
+      <div class="conatiner d-flex justify-content-center my-5">
+        <button class="button" onclick="shortBreak()">
+          START
+        </button>
+      </div>
+      <p> <center> Did you know that pomodoro means "tomato" in Italian? </center> </p>
+    </div>
+  <script src="script.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
